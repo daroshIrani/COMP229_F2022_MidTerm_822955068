@@ -1,0 +1,59 @@
+<main class="container">
+    <div class="row">
+        <div class="offset-md-1 col-md-11">
+            <h1>
+                <%= title %>
+            </h1>
+            <!-- ------------------------ -->
+            <!-- FIX THE ADD BUTTON BELOW -->
+            <!-- ------------------------ -->
+            <a href="" class="btn btn-primary" role="button">
+                <i class="fas fa-plus-circle"></i> Add a Book</a>
+            <br>
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr class="d-flex">
+                    <th class="text-center col-2">Title</th>
+                    <th class="text-center col-2">Author</th>
+                    <th class="text-center col-1">Year</th>
+                    <th class="col-4">Description</th>
+                    <th class="text-center col-1">Price</th>
+                    <th class="text-center col-1"></th>
+                    <th class="text-center col-1"></th>
+                </tr>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let count=0; count < books.length; count++) { %>
+                    <tr class="d-flex">
+                        <td class="text-center col-2">
+                            <%= books[count].name %>
+                        </td>
+                        <td class="text-center col-2">
+                            <%= books[count].author %>
+                        </td>
+                        <td class="text-center col-1">
+                            <%= books[count].published %>
+                        </td>
+                        <td class="col-4">
+                            <%= books[count].description %>
+                        </td>
+                        <td class="text-center col-1">
+                            <%= books[count].price %>
+                        </td>
+                        <td class="text-center col-1">
+                            <!-- ------------------------ -->
+                            <!-- ADD the EDIT BUTTON HERE -->
+                            <!-- ------------------------ -->
+                        </td>
+                        <td class="text-center col-1">
+                            <!-- ------------------------ -->
+                            <!-- ADD the DELETE BUTTON HERE -->
+                            <!-- ------------------------ -->
+                        </td>
+                    </tr>
+                    <% } %>
+            </table>
+        </div>
+    </div>
+</main>
