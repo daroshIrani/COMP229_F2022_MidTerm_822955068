@@ -4,6 +4,7 @@
             <h1><%= title %></h1>
 
             <form class="form" method="POST">
+                <input type="hidden" name="id" value="<%= book._id %>" >
                 <div class="form-group">
                     <label for="nameTextField">Book Title</label>
                     <input type="text" class="form-control"
