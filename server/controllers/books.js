@@ -25,7 +25,7 @@ export function displayAddPage(req, res, next) {
     /*****************
     * ADD CODE HERE *
     *****************/
-
+    
      res.render('index', {title:'Book Add Page', page: 'books/add', books: {}})
 }
 
