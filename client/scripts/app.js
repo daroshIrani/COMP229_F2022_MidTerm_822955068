@@ -1,3 +1,8 @@
+// app.js
+// Darosh Irani
+// 822955068
+// Project Name - Favourite Book List App
+
 //IIFE
 (function()
 {

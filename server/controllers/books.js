@@ -1,3 +1,8 @@
+// books.js
+// Darosh Irani
+// 822955068
+// Project Name - Favourite Book List App
+
 // define the book model
 import booksModel from '../models/books.js';
 

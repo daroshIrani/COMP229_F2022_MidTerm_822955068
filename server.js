@@ -1,3 +1,8 @@
+// server.js
+// Darosh Irani
+// 822955068
+// Project Name - Favourite Book List App
+
 import debug from 'debug';
 debug('comp-229');
 import http from 'http';

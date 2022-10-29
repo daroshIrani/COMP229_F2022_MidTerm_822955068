@@ -1,3 +1,8 @@
+// books.js
+// Darosh Irani
+// 822955068
+// Project Name - Favourite Book List App
+
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
